@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dope Movies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Section -->
+  <div class="top-section">
+    <header>
+      <h1>🎬 Dope Movies</h1>
+      <div class="search-container">
+        <input type="text" id="searchBar" class="search-bar" placeholder="Search for movies...">
+        <button class="search-button" onclick="searchMovie()">Search</button>
+      </div>
+    </header>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="bottom-section">
+    <section id="recent">
+      <h2>Recent Movies</h2>
+      <div class="movie-grid" id="recentMovies"></div>
+    </section>
+
+    <section id="recommendations">
+      <h2>Recommended For You</h2>
+      <div class="movie-grid" id="recommendedMovies"></div>
+    </section>
+
+    <section id="watched">
+      <h2>Watched</h2>
+      <div class="movie-grid" id="watchedMovies"></div>
+    </section>
+
+    <section id="new">
+      <h2>New Releases</h2>
+      <div class="movie-grid" id="newMovies"></div>
+    </section>
+
+    <section id="searchResults">
+      <h2>Search Results</h2>
+      <div class="movie-grid" id="results"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
